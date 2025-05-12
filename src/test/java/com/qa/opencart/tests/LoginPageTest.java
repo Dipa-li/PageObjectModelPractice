@@ -1,5 +1,6 @@
 package com.qa.opencart.tests;
 
+import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.qa.opencart.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,19 +9,20 @@ public class LoginPageTest extends BaseTest {
 
     @Test
     public void loginPageTitleTest() {
-        String actTitle = loginpag.getLoginPageTitle();
+        String actTitle = loginPage.getLoginPageTitle();
         Assert.assertEquals(actTitle, "Account Login");
     }
 
     @Test
     public void loginPageURLTest() {
-        String actURL = loginpag.getLoginPageURL();
+        ChainTestListener.log("login page URL Test");
+        String actURL = loginPage.getLoginPageURL();
         Assert.assertTrue(actURL.contains("route=account/login"));
     }
 
     @Test
     public void forgotPwdLinkExistTest() {
-        Assert.assertTrue(loginpag.isForgotPwdLinkExist());
+        Assert.assertTrue(loginPage.isForgotPwdLinkExist());
     }
 
 

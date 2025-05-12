@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.aventstack.chaintest.plugins.ChainTestListener;
+import io.qameta.allure.Step;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -25,6 +27,8 @@ import com.qa.opencart.factory.DriverFactory;
 
 public class ElementUtil {
 
+
+
     private WebDriver driver;
     private Actions act;
     private JavaScriptUtil jsUtil;
@@ -32,7 +36,7 @@ public class ElementUtil {
     public ElementUtil(WebDriver driver) {
         this.driver = driver;
         act = new Actions(driver);
-        //jsUtil = new JavaScriptUtil(driver);
+        jsUtil = new JavaScriptUtil(driver);
     }
 
     private void nullCheck(CharSequence... value) {
@@ -41,6 +45,7 @@ public class ElementUtil {
         }
     }
 
+    @Step("entering value : {1} into element: {0}")
     public void doSendKeys(By locator, String value) {
         nullCheck(value);
         getElement(locator).clear();
@@ -65,6 +70,7 @@ public class ElementUtil {
         getElement(locatorType, locatorValue).sendKeys(value);
     }
 
+    @Step("clicking on element using : {0}")
     public void doClick(By locator) {
         getElement(locator).click();
     }
@@ -73,6 +79,7 @@ public class ElementUtil {
         getElement(locatorType, locatorValue).click();
     }
 
+    @Step("fetching the element text using : {0}")
     public String doElementGetText(By locator) {
         String eleText = getElement(locator).getText();
         System.out.println("element text =>" + eleText);
@@ -141,18 +148,20 @@ public class ElementUtil {
         return driver.findElement(getBy(locatorType, locatorValue));
     }
 
+    @Step("finding the element using: {0}")
     public WebElement getElement(By locator) {
+        ChainTestListener.log("locator : "+ locator.toString());
         WebElement element = driver.findElement(locator);
-       // highlightElement(element);
+        highlightElement(element);
         return element;
 
     }
 
-    /*private void highlightElement(WebElement element) {
+    private void highlightElement(WebElement element) {
         if(Boolean.parseBoolean(DriverFactory.highlight)) {
             jsUtil.flash(element);
         }
-    }*/
+    }
 
     public WebElement getElementWithWait(By locator, int timeOut) {
         return waitForElementVisible(locator, timeOut);
@@ -435,10 +444,11 @@ public class ElementUtil {
      * @param timeOut
      * @return
      */
+    @Step("waiting for element using: {0} and timeout : {1}")
     public WebElement waitForElementVisible(By locator, int timeOut) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-        // highlightElement(element);
+        highlightElement(element);
         return element;
     }
 
@@ -449,6 +459,7 @@ public class ElementUtil {
      * @param locator
      * @param timeOut
      */
+    @Step("waiting for element and cliking on it using: {0} and timeout : {1}")
     public void clickWhenReady(By locator, int timeOut) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
@@ -595,7 +606,3 @@ public class ElementUtil {
     }
 
 }
-
-
-
-

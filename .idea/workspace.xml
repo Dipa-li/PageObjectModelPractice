@@ -5,13 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b947d7c1-292a-46d9-adfc-92ec8a2a7ec5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/AppConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/constants/AppConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/AccountPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/CSVUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/CSVUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ElementUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ElementUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/JavaScriptUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/JavaScriptUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qa/opencart/utils/StringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/env.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testData/OpenCartTestData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/OpenCartTestData.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testRunner/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testRunner/testng_chrome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/AccountPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/RegisterPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/RegisterPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,32 +51,99 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ZigZagPatternLeetcode.executor&quot;: &quot;Debug&quot;,
-    &quot;Maven.PageObjectModel [clean,test,compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PageObjectModel [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PageObjectModel [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PageObjectModel [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PageObjectModel [test].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.PageObjectModel [validate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegisterPageTest.userRegisterTest.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/selenium/PageObjectModel/src/main/resources/testData&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/selenium/PageObjectModel/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DuplicateString.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.TestA (1).executor": "Run",
+    "Application.TestA (2).executor": "Run",
+    "Application.TestA (3).executor": "Debug",
+    "Application.TestA.executor": "Run",
+    "Application.TestB.executor": "Run",
+    "Application.ThreeSum.executor": "Run",
+    "Application.TwoSum.executor": "Run",
+    "Application.ZigZagPatternLeetcode.executor": "Debug",
+    "Maven.PageObjectModel [clean,test,compile].executor": "Run",
+    "Maven.PageObjectModel [clean].executor": "Run",
+    "Maven.PageObjectModel [compile].executor": "Run",
+    "Maven.PageObjectModel [package].executor": "Run",
+    "Maven.PageObjectModel [test].executor": "Run",
+    "Maven.PageObjectModel [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml.executor": "Run",
+    "TestNG.D:/selenium/PageObjectModel/src/test/resources/testRunner/testng_regression.xml.executor": "Run",
+    "TestNG.RegisterPageTest.userRegisterTest.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/selenium/PageObjectModel/src/main/resources/testData",
+    "onboarding.tips.debug.path": "D:/selenium/PageObjectModel/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.qa.opencart.factory" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\selenium\PageObjectModel\src\main\resources\testData" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\selenium\PageObjectModel\src\test" />
+    </key>
   </component>
-  <component name="RunManager" selected="TestNG.D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml">
+  <component name="RunManager" selected="TestNG.D:/selenium/PageObjectModel/src/test/resources/testRunner/testng_regression.xml">
+    <configuration name="TestA (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.TestA" />
+      <module name="PageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestA (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.TestA" />
+      <module name="PageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.TestA" />
+      <module name="PageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.constants.TestB" />
+      <module name="PageObjectModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.opencart.constants.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PageObjectModel [clean,test,compile]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -95,37 +176,10 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/selenium/PageObjectModel/src/test/resources/testRunner/testng_regression.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PageObjectModel" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/testRunner/testNG.xml" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="GROUP_NAME" value="" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testRunner/testng_regression.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegisterPageTest.userRegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="PageObjectModel" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.opencart.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.opencart.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.opencart.tests.RegisterPageTest" />
-      <option name="METHOD_NAME" value="userRegisterTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -133,14 +187,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.TestA (3)" />
+      <item itemvalue="Application.TestA" />
+      <item itemvalue="Application.TestA (2)" />
+      <item itemvalue="Application.TestB" />
       <item itemvalue="Maven.PageObjectModel [clean,test,compile]" />
-      <item itemvalue="TestNG.D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml" />
-      <item itemvalue="TestNG.RegisterPageTest.userRegisterTest" />
+      <item itemvalue="TestNG.D:/selenium/PageObjectModel/src/test/resources/testRunner/testng_regression.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.D:/selenium/PageObjectModel/src/main/resources/testRunner/testNG.xml" />
-        <item itemvalue="TestNG.RegisterPageTest.userRegisterTest" />
+        <item itemvalue="TestNG.D:/selenium/PageObjectModel/src/test/resources/testRunner/testng_regression.xml" />
+        <item itemvalue="Application.TestA (3)" />
+        <item itemvalue="Application.TestB" />
+        <item itemvalue="Application.TestA" />
+        <item itemvalue="Application.TestA (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -154,40 +214,5 @@
       <updated>1744264593075</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/qa/opencart/tests/RegisterPageTest.java</url>
-          <line>34</line>
-          <properties class="com.qa.opencart.tests.RegisterPageTest" method="userRegisterTest">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/qa/opencart/base/BaseTest.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/qa/opencart/factory/DriverFactory.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

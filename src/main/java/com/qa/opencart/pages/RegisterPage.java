@@ -9,9 +9,9 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RegisterPage {
-
     private WebDriver driver;
     private ElementUtil eleUtil;
+
     private By firstName = By.id("input-firstname");
     private By lastName = By.id("input-lastname");
     private By email = By.id("input-email");
@@ -30,19 +30,21 @@ public class RegisterPage {
     private By logoutLink = By.linkText("Logout");
     private By registerLink = By.linkText("Register");
 
-    public RegisterPage(WebDriver driver)
-    {
+    public RegisterPage(WebDriver driver) {
         this.driver = driver;
         eleUtil = new ElementUtil(driver);
     }
 
-    public boolean userRegistration(String firstName, String lastName, String telephone, String password, String subscribe ) {
+    public boolean userRegisteration(String firstName, String lastName,
+                                     String telephone, String password, String subscribe) {
+
         eleUtil.waitForElementVisible(this.firstName, AppConstants.DEFAULT_TIMEOUT).sendKeys(firstName);
         eleUtil.doSendKeys(this.lastName, lastName);
         eleUtil.doSendKeys(this.email, StringUtils.getRandomEmailId());
         eleUtil.doSendKeys(this.telephone, telephone);
         eleUtil.doSendKeys(this.password, password);
         eleUtil.doSendKeys(this.confirmpassword, password);
+
         if (subscribe.equalsIgnoreCase("yes")) {
             eleUtil.doClick(subscribeYes);
         } else {
@@ -50,6 +52,7 @@ public class RegisterPage {
         }
         eleUtil.doClick(agreeCheckBox);
         eleUtil.doClick(continueButton);
+
 
         if (eleUtil.waitForElementVisible(successMessg, AppConstants.MEDIUM_DEFAULT_TIMEOUT).getText().contains(AppConstants.REGISTER_SUCCESS_MESSG)) {
             eleUtil.doClick(logoutLink);
@@ -59,6 +62,5 @@ public class RegisterPage {
         return false;
 
     }
+
 }
-
-
