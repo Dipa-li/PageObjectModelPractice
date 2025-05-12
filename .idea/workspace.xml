@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b947d7c1-292a-46d9-adfc-92ec8a2a7ec5" name="Changes" comment="">
+    <list default="true" id="b947d7c1-292a-46d9-adfc-92ec8a2a7ec5" name="Changes" comment="added chain test report">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/opencart.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/opencart.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/chaintest.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/chaintest.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,6 +196,19 @@
       <option name="presentableId" value="Default" />
       <updated>1744264593075</updated>
     </task>
+    <task id="LOCAL-00001" summary="added chain test report">
+      <option name="closed" value="true" />
+      <created>1747074513750</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747074513750</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added chain test report" />
+    <option name="LAST_COMMIT_MESSAGE" value="added chain test report" />
   </component>
 </project>
